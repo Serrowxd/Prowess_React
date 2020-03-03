@@ -1,0 +1,25 @@
+{
+  "name": "Prowess_Guild",
+  "version": "1.0.0",
+  "description": "Some mock-ups for the raiding guild Prowess on World of Warcraft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch styles/scss -o styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serrowxd/Prowess_Guild.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serrowxd/Prowess_Guild/issues"
+  },
+  "homepage": "https://github.com/Serrowxd/Prowess_Guild#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1"
+  }
+}
