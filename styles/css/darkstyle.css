@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 60%;
   position: relative;
   overflow: hidden;
   padding: 2rem 0; }
@@ -54,4 +54,19 @@ body {
     font-size: 1.5rem; }
 
 .lower-jumbo {
-  height: 50%; }
+  display: flex;
+  height: 40%;
+  position: relative;
+  overflow: hidden; }
+  .lower-jumbo .shard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transform: skew(-20deg);
+    transition: 0.15s; }
+    .lower-jumbo .shard:hover {
+      background-color: orangered; }
+  .lower-jumbo .smol-shard {
+    transform: skew(20deg); }
