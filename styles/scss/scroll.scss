@@ -1,23 +1,27 @@
+// Colors
+$black: #2f2f2f;
+
 html,
 body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
+  background-color: $black;
+  color: white;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #2f2f2f;
-  color: white;
 }
 
+// !! Jumbo
 .jumbo-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60%;
+  height: 100%;
   position: relative;
   overflow: hidden;
   padding: 2rem 0;
@@ -33,7 +37,7 @@ body {
 }
 
 .cover {
-  background-color: rgba(47, 47, 47, 0.8);
+  background-color: rgba($black, 0.8);
   height: 100%;
   width: 100%;
   position: relative;
@@ -52,35 +56,73 @@ body {
   align-items: center;
   position: relative;
   z-index: 5;
-}
-.jumbo .jumbo-logo {
-  font-size: 3rem;
-}
-.jumbo .jumbo-title {
-  font-size: 6rem;
-}
-.jumbo p {
-  font-size: 1.5rem;
+
+  .jumbo-logo {
+    font-size: 3rem;
+  }
+
+  .jumbo-title {
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }
 
+// !! Shards
 .lower-jumbo {
   display: flex;
   height: 40%;
+
   position: relative;
   overflow: hidden;
+  border: 1px solid black;
+
+  .shard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transform: skew(-20deg);
+    margin: 0 0.1rem;
+    border-top: transparent;
+    border-bottom: transparent;
+
+    transition: 0.15s;
+
+    &:first-child {
+      border-left: transparent;
+    }
+
+    &:last-child {
+      border-right: transparent;
+    }
+
+    &:hover {
+      background-color: blue;
+    }
+  }
+
+  .smol-shard {
+    transform: skew(20deg);
+  }
 }
-.lower-jumbo .shard {
-  width: 100%;
+
+// !! About
+
+.about-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  transform: skew(-20deg);
-  transition: 0.15s;
 }
-.lower-jumbo .shard:hover {
-  background-color: orangered;
+
+.icon img {
+  width: 20rem;
+  height: auto;
 }
-.lower-jumbo .smol-shard {
-  transform: skew(20deg);
+
+.text {
+  width: 30%;
 }
