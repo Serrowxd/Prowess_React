@@ -114,15 +114,28 @@ body {
 
 .about-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
-.icon img {
-  width: 20rem;
-  height: auto;
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .icon img {
+    width: 25rem;
+    height: auto;
+    margin-bottom: -3rem;
+  }
 }
 
 .text {
-  width: 30%;
+  width: 40%;
 }
