@@ -65,28 +65,67 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    transform: skew(-20deg);
     margin: 0 0.1rem;
     border-top: transparent;
     border-bottom: transparent;
     transition: 0.15s; }
-    .lower-jumbo .shard:first-child {
-      border-left: transparent; }
-    .lower-jumbo .shard:last-child {
-      border-right: transparent; }
     .lower-jumbo .shard:hover {
       background-color: blue; }
-  .lower-jumbo .smol-shard {
-    transform: skew(20deg); }
 
 .about-wrapper {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35rem;
+  background-image: linear-gradient(to right, transparent, gray); }
+  .about-wrapper .icon img {
+    width: 25rem;
+    height: auto; }
+  .about-wrapper .text {
+    width: 40%; }
+    .about-wrapper .text p {
+      padding: 0.5rem 0; }
+
+.hook-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  .hook-wrapper .pannel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black; }
+
+.recruitment-wrapper {
+  display: flex;
+  width: 100%;
+  height: 50rem;
   justify-content: center;
-  align-items: center; }
+  border-top: 1px solid black; }
+  .recruitment-wrapper .recruit-pannel {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .recruitment-wrapper .recruit-pannel h1 {
+      padding: 1rem; }
+  .recruitment-wrapper .recruit-needs {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black; }
 
-.icon img {
-  width: 20rem;
-  height: auto; }
-
-.text {
-  width: 30%; }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  border-top: 1px solid black; }
