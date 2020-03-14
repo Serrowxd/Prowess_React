@@ -77,12 +77,23 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 35rem;
-  background-image: linear-gradient(to right, transparent, gray); }
+  background-image: linear-gradient(to left, #2f2f2f, #505050); }
   .about-wrapper .icon img {
-    width: 25rem;
-    height: auto; }
+    width: 100%;
+    height: auto;
+    opacity: 0.5; }
   .about-wrapper .text {
-    width: 40%; }
+    padding: 0 5rem 0 0;
+    width: 80%;
+    text-align: center; }
+    .about-wrapper .text h1 {
+      text-align: center;
+      padding: 0;
+      font-size: 3rem; }
+    .about-wrapper .text h2 {
+      text-align: center;
+      padding: 0 0 1rem 0;
+      font-size: 2rem; }
     .about-wrapper .text p {
       padding: 0.5rem 0; }
 
@@ -93,12 +104,48 @@ body {
   .hook-wrapper .pannel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     height: 35rem;
     width: 100%;
     border-left: 1px solid black;
     border-right: 1px solid black; }
+    .hook-wrapper .pannel .pannel-header {
+      font-size: 1.25rem; }
+    .hook-wrapper .pannel h1 {
+      padding: 1rem; }
+  .hook-wrapper .kill-bar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .hook-wrapper .kill-bar .boss {
+      display: flex;
+      justify-content: center;
+      width: 15%;
+      font-size: 2rem; }
+    .hook-wrapper .kill-bar .kills-wrapper {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem; }
+  .hook-wrapper .key-bar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .hook-wrapper .key-bar .key {
+      display: flex;
+      justify-content: center;
+      width: 25%;
+      font-size: 1.25rem; }
+    .hook-wrapper .key-bar .key-wrapper {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem; }
 
 .recruitment-wrapper {
   display: flex;

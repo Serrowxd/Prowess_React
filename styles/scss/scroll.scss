@@ -104,15 +104,30 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 35rem;
-  background-image: linear-gradient(to right, transparent, gray);
+  background-image: linear-gradient(to left, #2f2f2f, rgb(80, 80, 80));
 
   .icon img {
-    width: 25rem;
+    width: 100%;
     height: auto;
+    opacity: 0.5;
   }
 
   .text {
-    width: 40%;
+    padding: 0 5rem 0 0;
+    width: 80%;
+    text-align: center;
+
+    h1 {
+      text-align: center;
+      padding: 0;
+      font-size: 3rem;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 0 0 1rem 0;
+      font-size: 2rem;
+    }
 
     p {
       padding: 0.5rem 0;
@@ -130,12 +145,64 @@ body {
   .pannel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     height: 35rem;
     width: 100%;
     border-left: 1px solid black;
     border-right: 1px solid black;
+
+    .pannel-header {
+      font-size: 1.25rem;
+    }
+
+    h1 {
+      padding: 1rem;
+    }
+  }
+
+  .kill-bar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .boss {
+      display: flex;
+      justify-content: center;
+      width: 15%;
+      font-size: 2rem;
+    }
+
+    .kills-wrapper {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+  }
+
+  .key-bar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .key {
+      display: flex;
+      justify-content: center;
+      width: 25%;
+      font-size: 1.25rem;
+    }
+
+    .key-wrapper {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
   }
 }
 
