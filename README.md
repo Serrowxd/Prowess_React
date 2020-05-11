@@ -25,7 +25,7 @@ Temporary Layout (Homepage)
 
 ![alt text][logo]
 
-[logo]: https://github.com/Serrowxd/Prowess_Guild/blob/master/idk.png?raw=true 'Layout'
+[logo]: https://github.com/Serrowxd/Prowess_Guild/blob/master/readme-assets/idk.png?raw=true 'Layout'
 
 Temporary Layout (Character)
 
@@ -33,7 +33,7 @@ Temporary Layout (Character)
 
 ![alt text][logo]
 
-[logo]: https://github.com/Serrowxd/Prowess_Guild/blob/master/idk.png?raw=true 'Layout'
+[logo]: https://github.com/Serrowxd/Prowess_Guild/blob/master/readme-assets/idk2.png?raw=true 'Layout'
 
 Temporary Layout (News)
 
