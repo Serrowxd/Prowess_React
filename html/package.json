@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Serrowxd/Prowess_Guild#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.1"
   }
 }
