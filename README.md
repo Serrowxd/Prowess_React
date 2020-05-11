@@ -29,11 +29,9 @@ Temporary Layout (Homepage)
 
 Temporary Layout (Character)
 
-`!! Temporary !!`
+![alt text][logo2]
 
-![alt text][logo]
-
-[logo]: https://github.com/Serrowxd/Prowess_Guild/blob/master/readme-assets/idk2.png?raw=true 'Layout'
+[logo2]: https://github.com/Serrowxd/Prowess_Guild/blob/master/readme-assets/idk2.png?raw=true 'Layout'
 
 Temporary Layout (News)
 
