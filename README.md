@@ -16,3 +16,21 @@ All text that should (will) be modified within the website will be hosted within
   - `NOTE: This will be pulled from the raider.io API for all the information. Links to warcraftlogs / raider.io / armory will all be done via the json file and imported accordingly.`
   - `Additionally the images will be pulled from the Battle.net links directly, this will prevent images from needing to be updated with renames or roster changes.`
 - Homepage needs a background image that's viable, possibly a video but without a proper video it'll be much harder. Look into this?
+
+---
+
+Yes, these are made in MS Paint, don't judge.
+
+Temporary Layout (Homepage)
+
+![alt text][logo]
+
+[logo]: https://github.com/Serrowxd/Prowess_Guild/blob/master/idk.png?raw=true 'Layout'
+
+Temporary Layout (Character)
+
+Temporary Layout (News)
+
+Temporary Layout (About)
+
+Temporary Layout (Roster)
