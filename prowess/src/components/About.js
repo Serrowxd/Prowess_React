@@ -4,7 +4,7 @@ import img from '../assets/yoink.jpg';
 
 function About() {
   return (
-    <div className="about-wrapper">
+    <div className="about-container">
       <div className="pannel-wrapper">
         <div className="pannel-content main">
           <h1>Prowess</h1>

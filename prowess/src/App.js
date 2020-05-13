@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Navigation, Footer, Landing, About } from './components/compReduce';
+import { Navigation, Footer, Landing, About, Roster } from './components/compReduce';
 
 // Data imports
 const Raiders = require('./data/raiders.json');
@@ -28,6 +28,7 @@ function App() {
     <div className="global-container">
       <Navigation nav={navCheck} />
 
+      {/* Pages */}
       <Switch>
         <Route exact path="/">
           <Landing />
@@ -35,6 +36,10 @@ function App() {
 
         <Route path="/about">
           <About />
+        </Route>
+
+        <Route path="/roster">
+          <Roster />
         </Route>
       </Switch>
 
