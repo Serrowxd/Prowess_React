@@ -43,4 +43,4 @@ Temporary Layout (Roster)
 
 ![alt text][logo3]
 
-[logo3]: https://github.com/Serrowxd/Prowess_Guild/blob/master/readme-assets/idk2.png?raw=true 'Layout'
+[logo3]: https://github.com/Serrowxd/Prowess_Guild/blob/master/readme-assets/idk3.png?raw=true 'Layout'
