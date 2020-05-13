@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { Navigation, Footer, Landing, About } from './components/compReduce';
+
+// Data imports
+const Raiders = require('./data/raiders.json');
+const Content = require('./data/content.json');
 
 function App() {
+  const [navCheck, setNav] = useState(false);
+
+  function windowChecker() {
+    setTimeout(() => {
+      if (window.location.pathname !== '/') {
+        setNav(true);
+      } else {
+        setNav(false);
+      }
+    }, 0);
+  }
+
+  useEffect(() => {
+    windowChecker();
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="global-container">
+      <Navigation nav={navCheck} />
+
+      <Switch>
+        <Route exact path="/">
+          <Landing />
+        </Route>
+
+        <Route path="/about">
+          <About />
+        </Route>
+      </Switch>
+
+      <Footer />
     </div>
   );
 }
