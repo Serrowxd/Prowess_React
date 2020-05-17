@@ -244,6 +244,7 @@ $landing-bkg: url('../../assets/bkg.jpg');
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: $blacker;
 }
 
 .rh-wrapper {
@@ -284,8 +285,10 @@ $landing-bkg: url('../../assets/bkg.jpg');
   flex: 0 1 auto;
 
   background-color: $blackish;
-  height: 15rem;
+  height: 25rem;
   margin: 0.5rem;
+
+  overflow: hidden;
 
   font-size: 2rem;
 }
@@ -297,5 +300,52 @@ $landing-bkg: url('../../assets/bkg.jpg');
   height: 100%;
   display: grid;
   position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.role-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: $whiter;
+
+  .role-header {
+    padding: 2rem 0;
+  }
+}
+
+// !! Roster Cards
+
+.rc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+  .rc-filter {
+    height: 100%;
+    width: 100%;
+    background-color: rgba($blacker, 0.5);
+    position: absolute;
+    z-index: 2;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: $whiter;
+    z-index: 3;
+  }
 }

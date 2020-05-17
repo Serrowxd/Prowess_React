@@ -1,16 +1,27 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Navigation(props) {
   return (
     <div className={props.nav ? 'nav-container' : 'nav-container abs-nav'}>
       <div className="nav-header">
-        <h1>Prowess</h1>
+        <Link to="/">
+          <h1>Prowess</h1>
+        </Link>
       </div>
       <div className="nav-items">
-        <p>link</p>
-        <p>link</p>
-        <p>link</p>
-        <p>link</p>
+        <Link to="/about">
+          <p>About</p>
+        </Link>
+        <Link to="/roster">
+          <p>Roster</p>
+        </Link>
+        <Link to="/">
+          <p>Logs</p>
+        </Link>
+        <Link to="/">
+          <p>Discord</p>
+        </Link>
       </div>
     </div>
   );

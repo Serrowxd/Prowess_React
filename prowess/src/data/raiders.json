@@ -1,1 +1,25 @@
-{}
+{
+  "Serrow": {
+    "user": "Serrow",
+    "class": "Druid",
+    "spec": "Balance",
+    "small": "https://render-us.worldofwarcraft.com/character/malganis/173/178962861-avatar.jpg",
+    "large": "https://render-us.worldofwarcraft.com/character/malganis/173/178962861-main.jpg"
+  },
+  "Santo": {
+    "user": "Santo",
+    "large": "https://render-us.worldofwarcraft.com/character/malganis/224/173798880-main.jpg"
+  },
+  "Ethren": {
+    "user": "Ethren",
+    "large": "https://render-us.worldofwarcraft.com/character/malganis/195/180125635-main.jpg"
+  },
+  "Ryanlockwood": {
+    "user": "Ryanlockwood",
+    "large": "https://render-us.worldofwarcraft.com/character/malganis/233/153922281-main.jpg"
+  },
+  "Neon": {
+    "user": "Neon",
+    "large": "https://render-us.worldofwarcraft.com/character/malganis/223/180819679-main.jpg"
+  }
+}

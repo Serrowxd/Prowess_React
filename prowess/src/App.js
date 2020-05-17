@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useReducer } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Navigation, Footer, Landing, About, Roster } from './components/compReduce';
+import { Navigation, Footer, Landing, About, Roster, Raider } from './components/compReduce';
+
+const Users = require('./data/raiders.json');
 
 // Data imports
 const Raiders = require('./data/raiders.json');

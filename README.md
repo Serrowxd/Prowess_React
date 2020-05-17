@@ -8,6 +8,8 @@ The idea with this is to create a fully functional website that tracks current g
 
 All text that should (will) be modified within the website will be hosted within JSON files that will act as a mock back-end server, holding all the text and image logic. This will then be imported and utilized by the smart components, which create dumb components that render the data.
 
+Raider profiles will be future dated, temporary work-around will be creating links that show up via click on the cards themselves.
+
 `To-Do`
 
 - All JSON should be hosted and moved via a singular folder.
@@ -44,3 +46,30 @@ Temporary Layout (Roster)
 ![alt text][logo3]
 
 [logo3]: https://github.com/Serrowxd/Prowess_Guild/blob/master/readme-assets/idkimg.png?raw=true 'Layout'
+
+!!
+
+### Todays Goal
+
+5/17/2020
+
+`Main`
+
+- Finish character pages for core raiders (template).
+- Create JSON data for character(s) (temp) that is piped into template pages and roster page.
+- Link Discord/Logs paths.
+- Iterate through roster cards and find a proper way to display them.
+- Create news/recruitment pannels (temp).
+- Find proper content for home page shards + links.
+
+`Stretch`
+
+- Footer content
+- Navigation (sticky?)
+- Sales Page (wire)
+- Background image for Homepage (video?)
+- Color Pallete + Approval
+
+!! Note !!
+
+Always push props to the proper children :^)))
