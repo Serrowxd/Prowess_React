@@ -16,9 +16,9 @@ function Navigation(props) {
         <Link to="/roster">
           <p>Roster</p>
         </Link>
-        <Link to="/">
+        <a href="https://www.warcraftlogs.com/guild/rankings/490376/latest/" target="_blank" rel="noopener noreferrer">
           <p>Logs</p>
-        </Link>
+        </a>
         <Link to="/">
           <p>Discord</p>
         </Link>

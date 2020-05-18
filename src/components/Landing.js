@@ -19,11 +19,27 @@ function Landing() {
         </div>
 
         <div className="mc-wrapper">
+          {/* Articles will be mapped from content.json */}
           <div className="news-wrapper">
-            <h1>News Content</h1>
+            <div className="article-card">
+              <h1> Henlo (OvO")</h1>
+            </div>
+            <div className="article-card">
+              <h1> Henlo (OvO")</h1>
+            </div>
+            <div className="article-card">
+              <h1> Henlo (OvO")</h1>
+            </div>
+            <div className="article-card">
+              <h1> Henlo (OvO")</h1>
+            </div>
           </div>
+
+          {/* Recruitment will be mapped from content.json? */}
           <div className="rec-wrapper">
-            <h1>Recruitment Content</h1>
+            <div className="rec-pannel">
+              <h1>Recruitment Content</h1>
+            </div>
           </div>
         </div>
       </div>

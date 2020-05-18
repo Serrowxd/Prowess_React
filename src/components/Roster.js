@@ -21,7 +21,7 @@ function Roster() {
         </div>
         <div className="tank-wrapper">
           <div className="roster-card">
-            <RosterCard user={Users.Neon.user} large={Users.Neon.large} />
+            <RosterCard user={Users.Neon.user} large={Users.Neon.large} class={Users.Neon.class} />
           </div>
           <div className="roster-card">
             <RosterCard />
@@ -33,7 +33,11 @@ function Roster() {
         </div>
         <div className="healer-wrapper">
           <div className="roster-card">
-            <RosterCard user={Users.Ryanlockwood.user} large={Users.Ryanlockwood.large} />
+            <RosterCard
+              user={Users.Ryanlockwood.user}
+              large={Users.Ryanlockwood.large}
+              class={Users.Ryanlockwood.class}
+            />
           </div>
           <div className="roster-card">
             <RosterCard />
@@ -51,13 +55,13 @@ function Roster() {
         </div>
         <div className="dps-wrapper">
           <div className="roster-card">
-            <RosterCard user={Users.Santo.user} large={Users.Santo.large} />
+            <RosterCard user={Users.Santo.user} large={Users.Santo.large} class={Users.Santo.class} />
           </div>
           <div className="roster-card">
-            <RosterCard user={Users.Ethren.user} large={Users.Ethren.large} />
+            <RosterCard user={Users.Ethren.user} large={Users.Ethren.large} class={Users.Ethren.class} />
           </div>
           <div className="roster-card">
-            <RosterCard user={Users.Serrow.user} large={Users.Serrow.large} />
+            <RosterCard user={Users.Serrow.user} large={Users.Serrow.large} class={Users.Serrow.class} />
           </div>
           <div className="roster-card">
             <RosterCard />

@@ -158,17 +158,24 @@ $landing-bkg: url('../../assets/bkg.jpg');
 .mc-wrapper {
   display: flex;
   justify-content: space-around;
+  background-color: $blackish;
 }
 
 // News
 .news-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 50rem;
-  width: 65%;
-  background-color: $green;
+  width: 80%;
+  height: 100%;
+}
+
+.article-card {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  background-color: $orange;
+  margin: 1rem 0;
 }
 
 // Recruitment
@@ -179,6 +186,16 @@ $landing-bkg: url('../../assets/bkg.jpg');
   align-items: center;
   height: 50rem;
   width: 15%;
+  padding: 1rem 0;
+}
+
+.rec-pannel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  width: 100%;
   background-color: $orange;
 }
 
@@ -285,7 +302,7 @@ $landing-bkg: url('../../assets/bkg.jpg');
   flex: 0 1 auto;
 
   background-color: $blackish;
-  height: 25rem;
+  height: 30rem;
   margin: 0.5rem;
 
   overflow: hidden;
@@ -328,6 +345,8 @@ $landing-bkg: url('../../assets/bkg.jpg');
   position: relative;
   overflow: hidden;
 
+  transition: 0.15s;
+
   .rc-filter {
     height: 100%;
     width: 100%;
@@ -343,9 +362,68 @@ $landing-bkg: url('../../assets/bkg.jpg');
     z-index: 1;
   }
 
+  h1,
+  p {
+    z-index: 3;
+  }
+
   h1 {
     font-size: 5rem;
     color: $whiter;
-    z-index: 3;
+    padding: 1rem 0;
+  }
+
+  p {
+    font-size: 2.5rem;
+    color: $blue;
+  }
+}
+
+// Hover Content
+.rc-idle,
+.rc-hover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.rc-idle {
+  justify-content: center;
+  align-items: center;
+}
+
+.rc-hover {
+  .rc-banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba($blackish, 0.5);
+
+    p {
+      font-size: 1.75rem;
+      padding: 0.5rem;
+
+      &:first-child {
+        color: $whiter;
+      }
+    }
+  }
+
+  .rc-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+    p {
+      color: $whiter;
+      transition: 0.15s;
+
+      &:hover {
+        color: $blue;
+        cursor: pointer;
+      }
+    }
   }
 }
