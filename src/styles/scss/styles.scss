@@ -28,8 +28,10 @@ $blue: #00bcd4;
 $orange: #e6a800;
 $green: #8bc34a;
 
+$blackalpha: rgba($blacker, 0.5);
+
 // Temporary Background Image
-$landing-bkg: url('../../assets/bkg.jpg');
+$landing-bkg: url('../../assets/wowmop-temple.jpg');
 
 // !! Misc
 
@@ -39,7 +41,8 @@ $landing-bkg: url('../../assets/bkg.jpg');
 .nav-container {
   display: flex;
   justify-content: space-between;
-  background-color: $blacker;
+  // background-color: $blacker;
+  background-color: rgba($blacker, 0.25);
   color: $whiter;
   padding: 0.75rem 3rem;
   font-size: 1.25rem;
@@ -91,31 +94,49 @@ $landing-bkg: url('../../assets/bkg.jpg');
   display: flex;
   width: 100%;
   height: 100%;
+  background-color: $blackish;
 }
 
 .filter {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-color: rgba($blacker, 0.7);
+  background-color: rgba($blacker, 0.25);
   z-index: 1;
 }
 
 .landing-wrapper {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
 // Jumbo
 .jumbo-wrapper {
   display: flex;
+  justify-content: flex-end;
   height: 100%;
-  // background: $landing-bkg;
+  // background: linear-gradient(to left, $blackish 10%, $blacker 65%, $blacker);
+  background: linear-gradient(to right, $blackish 10%, $blackalpha 40%, $blackalpha);
+}
+
+.jumbo-background {
+  background: $landing-bkg;
   background-position: center;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .jumbo {
@@ -125,16 +146,26 @@ $landing-bkg: url('../../assets/bkg.jpg');
   align-items: center;
   z-index: 1;
   height: 100vh;
-  width: 100%;
+  width: 75%;
   color: $whiter;
 
   h1 {
-    font-size: 5rem;
+    font-size: 10rem;
   }
   h2 {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
+}
+
+.jumbo-img {
+  height: auto;
+  width: 30rem;
+  position: absolute;
+  margin: auto auto;
+  top: 0;
+  bottom: 0;
+  right: 15%;
 }
 
 // Shards

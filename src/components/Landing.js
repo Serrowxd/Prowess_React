@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
 
+import ye from '../assets/aight.png';
+
 function Landing() {
   return (
     <div className="landing-container">
       <div className="landing-wrapper">
         <div className="filter" />
-        <div className="jumbo-wrapper">
-          <div className="jumbo">
-            <h1>Henlo (OvO")</h1>
-            <h2>Bottom Text</h2>
+        <div className="icon-container">
+          <img src={ye} className="icon-img" alt="uwu" />
+        </div>
+
+        <div className="jumbo-background">
+          <div className="jumbo-wrapper">
+            <div className="jumbo">
+              <h1>Prowess</h1>
+              <h2>US-Mal'Ganis</h2>
+            </div>
           </div>
         </div>
 

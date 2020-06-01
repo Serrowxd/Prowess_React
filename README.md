@@ -24,6 +24,7 @@ Raider profiles will be future dated, temporary work-around will be creating lin
 - Role headers should stick to the bottom of the navigation (smaller)
 - Animate everything!!
 - Clicking on news posts will move them into a larger full-screen view so the full article (modal) can be read.
+- Find a higher res image for the background on the landing.
 
 ---
 

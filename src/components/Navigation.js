@@ -6,10 +6,13 @@ function Navigation(props) {
     <div className={props.nav ? 'nav-container' : 'nav-container abs-nav'}>
       <div className="nav-header">
         <Link to="/">
-          <h1>Prowess</h1>
+          <h1>Logo Here</h1>
         </Link>
       </div>
       <div className="nav-items">
+        <Link to="/">
+          <p>Home</p>
+        </Link>
         <Link to="/about">
           <p>About</p>
         </Link>
