@@ -42,7 +42,7 @@ $landing-bkg: url('../../assets/wowmop-temple.jpg');
   display: flex;
   justify-content: space-between;
   // background-color: $blacker;
-  background-color: rgba($blacker, 0.25);
+  background-color: $blacker;
   color: $whiter;
   padding: 0.75rem 3rem;
   font-size: 1.25rem;
@@ -75,6 +75,7 @@ $landing-bkg: url('../../assets/wowmop-temple.jpg');
   width: 100%;
   position: absolute;
   box-sizing: border-box;
+  background-color: rgba($blacker, 0.25);
 }
 
 // Footer
