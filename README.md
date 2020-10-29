@@ -1,5 +1,9 @@
 # Prowess_Guild
 
+-- UPDATE --
+
+Deprecating this repository temporarily while I work on another project.
+
 Prowess Guild Website
 
 `Happy Place Notes --`
